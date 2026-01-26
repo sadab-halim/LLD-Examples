@@ -1,16 +1,12 @@
 # Chain of Responsibility Pattern
 
 - [FAANG LLD Interview Guide](#faang-lld-interview-guide)
-  - [Example 1: API Gateway Requesy Processing Pipeline](#example-1--api-gateway-request-processing-pipeline)
-  - [Example 2: Exception/Error Handling in Distributed System](#example-2-exceptionerror-handling-in-distributed-transaction-system)
-  - [Example 3: Content Moderation Pipeline (UGC Platform)](#example-3--content-moderation-pipeline--ugc-platform-)
-  - [Example 4: Discount and Promotion Engine (E-commerce Checkout)](#example-4-discount-and-promotion-engine-e-commerce-checkout)
-  - [Example 5: Logging and Observability Event Enrichment Pipeline](#example-5-logging-and-observability-event-enrichment-pipeline)
 - []()
 
 # FAANG LLD Interview Guide
 
-## [Example 1: API Gateway Request Processing Pipeline]()
+<details>
+    <summary>Example 1: API Gateway Request Processing Pipeline</summary>
 
 ### Context / Problem
 
@@ -132,6 +128,9 @@ LoggingHandler
 - Handlers directly coupled to each other (not just to next)
 - No consideration of handler order performance implications
 - Overusing pattern for handlers that need bidirectional communication
+
+</details>
+
 
 ## [Example 2: Exception/Error Handling in Distributed Transaction System]()
 
