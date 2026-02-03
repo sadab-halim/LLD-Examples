@@ -1,9 +1,9 @@
 # Chain of Responsibility Pattern
 
-- [FAANG LLD Interview Guide](#faang-lld-interview-guide)
+- [Examples](#examples)
 - []()
 
-# FAANG LLD Interview Guide
+# Examples
 
 <details>
     <summary>Example 1: API Gateway Request Processing Pipeline</summary>
@@ -133,8 +133,10 @@ LoggingHandler
 
 </details>
 
+---
 
-## [Example 2: Exception/Error Handling in Distributed Transaction System]()
+<details>
+    <summary>Example 2: Exception/Error Handling in Distributed Transaction System</summary>
 
 ### Context / Problem
 
@@ -196,6 +198,9 @@ EscalationHandler (final handler)
 ├── handle(): log, alert on-call, return graceful error to user
 ```
 
+### Diagrams
+
+
 
 ### How the Pattern Is Applied (LLD View)
 
@@ -236,6 +241,13 @@ EscalationHandler (final handler)
 - Handlers modifying global state without idempotency guarantees
 - No circuit breaker logic in retry handler
 - Returning generic errors that lose context about recovery attempts
+
+#### [Code](https://github.com/sadab-halim/LLD-Examples/tree/master/Behavioral/src/chainOfResponsibility/eb)
+
+</details>
+
+---
+
 
 
 ## [Example 3: Content Moderation Pipeline (UGC Platform)]()
